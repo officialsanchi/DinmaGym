@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+import gym from "../assets/gym.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useState } from "react";
 
@@ -24,7 +25,8 @@ const Header = () => {
         )}
       </div>
       <div className="flex justify-between items-center px-10 py-4">
-      <img src={logo} alt="logo" className="h-12 w-auto" />
+      {/* <img src={logo} alt="logo" className="h-12 w-auto" /> */}
+      <img src={gym} alt="gym" className="h-12 w-auto" />
       <div className=" hidden md:flex gap-6 text-lg font-medium ">
         <Link to="/" className="hover:bg-black hover:text-white transition">Home</Link>
         <Link to="/about" className= " hover:bg-black hover:text-white transition">About</Link>
